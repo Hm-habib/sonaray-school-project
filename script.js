@@ -1,7 +1,14 @@
 
 
 function showSection(params) {
-  const x = document.getElementById(params + "Section").classList.remove("hidden");
+
+  document.querySelectorAll('.main-content > div').forEach(element => {
+    element.classList.add('hidden')
+
+  });
+  
+  
+  document.getElementById(params + 'Section').classList.remove("hidden");
 }
 
 
